@@ -17,6 +17,7 @@ a {
 
 ::placeholder {
   font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -95,6 +96,10 @@ img {
   cursor: pointer;
 }
 
+.menu i:hover {
+  color: orange;
+}
+
 .menuIcon {
   transition: 0.5s;
 }
@@ -136,7 +141,6 @@ img {
 }
 
 #main {
-  background-image: url("https://media.istockphoto.com/photos/suburban-house-picture-id1269776313?k=20&m=1269776313&s=612x612&w=0&h=vcQToSEurDAdnZjp42qKMzKL2dso7a_ytglMyJREAsg=");
   height: calc(100vh - 80px);
   background-repeat: no-repeat;
   width: 100%;
@@ -145,6 +149,7 @@ img {
   position: relative;
   display: grid;
   place-items: center;
+  transition: 0.5s linear;
 }
 
 .mainCover {
@@ -169,14 +174,14 @@ img {
 #main h1 {
   font-size: 1.3rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #main p {
   font-size: 0.8rem;
   width: 40ch;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #main button {
@@ -251,9 +256,11 @@ img {
   text-align: center;
 }
 
-.servicesGrid {
+.servicesGrid,
+.portfolioGrid,
+.teamGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -301,7 +308,7 @@ img {
 }
 
 .portfolioImage img {
-  height: 350px;
+  height: 320px;
 }
 
 .portfolioText {
@@ -362,6 +369,8 @@ textarea {
   color: white;
   font-size: 0.8rem;
   transition: 0.5s;
+  color: black;
+  font-size: 0.5rem;
 }
 
 textarea {
@@ -381,4 +390,65 @@ footer {
   justify-content: center;
   background-color: black;
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 3rem 1.2rem;
+  }
+
+  .contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  .menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  #main p {
+    width: 60ch;
+    line-height: 1.5rem;
+  }
+
+  #about {
+    align-items: center;
+  }
+
+  #about p {
+    width: 100ch;
+    padding: 1rem 0;
+  }
+
+  #services,
+  #portfolio,
+  #team,
+  #contact {
+    padding: 2rem 1.2rem;
+  }
 }

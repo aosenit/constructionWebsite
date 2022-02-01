@@ -13,13 +13,13 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <h2><span>ADE</span>TRAZ</h2>
+      <div class="logo" id="logo">
+        <a href="#main"><h2><span>ADE</span>TRAZ</h2></a>
       </div>
 
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#main" class="activeNav ">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -32,7 +32,7 @@
     </header>
     <div class="mobileNav">
       <ul>
-        <li><a href="#main">HOME</a></li>
+        <li><a href="#main" class="activeNav ">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -53,10 +53,12 @@
             impedit quae quisquam, eaque nihil deleniti at repellat dignissimos
             deserunt ullam officia placeat dolorum explicabo.
           </p>
-          <button>CONTACT US</button>
+          <button><a href="#contact">CONTACT US</a></button>
         </div>
         <div class="slideBackground">
-          <span></span><span></span><span></span>
+          <span id="dashOne"></span>
+          <span id="dashTwo"></span>
+          <span id="dashThree"></span>
         </div>
         <div class="mainCover"></div>
       </section>
@@ -76,7 +78,7 @@
             obcaecati harum quidem mollitia alias molestiae autem dolorem,
             accusamus iste vel.
           </p>
-          <button>CONTACT US</button>
+          <button><a href="#contact">CONTACT US</a></button>
         </div>
       </section>
 
@@ -271,6 +273,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
           architecto!elit. Alias, architecto!
         </p>
+       <div class="contactContent">
         <div class="contactMap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.84907907824!2d106.8270981149909!3d-6.2399098985801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4f8f8f8f8f7%3A0x8f8f8f8f8f8f8f8f!2sJl.+Kemang+Timur+No.1%2C+Kel.+Kemang%2C+Kec.+Kota+Bekasi%2C+Kota+Bekasi%2C+Jawa+Barat+17411!5e0!3m2!1sid!2sid!4v1569240981250!5m2!1sid!2sid"
@@ -290,6 +293,7 @@
             <button>SUBMIT FORM</button>
           </form>
         </div>
+       </div>
       </section>
     </main>
     <footer>
